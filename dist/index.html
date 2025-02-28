@@ -15,28 +15,120 @@
     />
   </head>
   <body>
-    <nav class="nav-header">
-      <a href="index.html">
-        <img src="./assets/logo.png" alt="logo" />
-      </a>
+    <!-- Navbar -->
+    <header>
+      <nav class="nav-header">
+        <a href="index.html">
+          <img src="./assets/logo.png" alt="logo" />
+        </a>
 
-      <div class="nav-btn">
-        <i class="fas fa-bars"></i>
-      </div>
+        <div class="nav-btn">
+          <i class="fas fa-bars"></i>
+        </div>
 
-      <div class="nav-links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./tags.html">Tags</a></li>
-          <li><a href="./recipes.html">Recipes</a></li>
-        </ul>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./tags.html">Tags</a></li>
+            <li><a href="./recipes.html">Recipes</a></li>
+            <li class="li-contact"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-contact nav-links">
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="head-title">
+      <h1>Saleford <span>&</span> Co.</h1>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="hero-content">
+          <!-- Hero Image -->
+          <img src="./assets/cooking.png" alt="Cooking" />
+          <div class="hero-text">
+            <p>Cooking is love made visible.</p>
+            <a href="./recipes.html" class="btn">View Recipes</a>
+          </div>
+        </div>
       </div>
-      <div class="nav-contact nav-links">
-        <a href="./contact.html">Contact</a>
+      <!-- End of Hero Section -->
+
+      <!-- recipe container -->
+
+      <section class="recipes-container">
+        <div class="tags-container">
+          <h2>Popular <span>Recipes</span></h2>
+          <div class="tags">
+            <a href="./recipes.html">Breakfast</a>
+            <a href="./recipes.html">Lunch</a>
+            <a href="./recipes.html">Dinner</a>
+            <a href="./recipes.html">Dessert</a>
+            <a href="./recipes.html">Snack</a>
+          </div>
+        </div>
+
+        <div class="recipes-list">
+          <div class="recipe">
+              <img src="./assets/Cake.png" alt="Chocolate Cake" />
+              <h3>Chocolate Cake</h3>
+              <p>This rich and moist chocolate cake is topped with a smooth and creamy chocolate ganache, making it a perfect dessert for any occasion.</p>
+              <a href="./recipe.html" class="btn">View Recipe</a>
+          </div>
+          <div class="recipe">
+              <img src="./assets/pasta.png" alt="Creamy Alfredo Pasta" />
+              <h3>Creamy Alfredo Pasta</h3>
+              <p>A delicious fettuccine pasta dish tossed in a rich and creamy Alfredo sauce with parmesan cheese and garlic.</p>
+              <a href="./recipe.html" class="btn">View Recipe</a>
+          </div>
+          <div class="recipe">
+              <img src="./assets/naan.png" alt="Garlic Butter Naan" />
+              <h3>Garlic Butter Naan</h3>
+              <p>Soft, fluffy naan bread brushed with a mixture of garlic butter and fresh herbs, perfect for pairing with Indian curries.</p>
+              <a href="./recipe.html" class="btn">View Recipe</a>
+          </div>
       </div>
-    </nav>
-   
+      
+      
+      <br><br>
+      
+      <div class="recipes-list">
+          <div class="recipe">
+              <img src="./assets/butter_chicken.png" alt="Butter Chicken" />
+              <h3>Butter Chicken</h3>
+              <p>A classic Indian dish featuring tender chicken in a creamy tomato sauce.</p>
+              <a href="./recipe.html" class="btn">View Recipe</a>
+          </div>
+          <div class="recipe">
+              <img src="./assets/Burger.png" alt="Cheese Burger" />
+              <h3>Cheese Burger</h3>
+              <p>Juicy beef patty layered with melted cheese, lettuce, and tomato.</p>
+              <a href="./recipe.html" class="btn">View Recipe</a>
+          </div>
+          <div class="recipe">
+              <img src="./assets/grill.png" alt="Grilled Chicken" />
+              <h3>Grilled Chicken</h3>
+              <p>Perfectly seasoned grilled chicken breast with a smoky flavor.</p>
+              <a href="./recipe.html" class="btn">View Recipe</a>
+          </div>
+      </div>
+      
+      </section>
+    </main>
+    <!-- footer  -->
+    <footer>
+      <p>
+        &copy; 2025 <span class="footer-logo">Saleford & Co.</span> | Designed
+        by <a href="https://mausooq.vercel.app">Mausooq</a>
+      </p>
+    </footer>
+
+    <!-- end of footer -->
   </body>
   <script src="./script/script.js"></script>
   <script
