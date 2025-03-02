@@ -1,36 +1,33 @@
-@import './restes';
-@import './variables';
+// Variables
+@import 'variables';
+@import 'restes';
 
-// Navbar Styling
+// Navbar Styles
+header {
+  position: sticky;
+  top: 0;
+  background: $primary-color;
+  z-index: 999;
+  box-shadow: $shadow-1;
+}
+
 .nav-header {
-    background: #fa995c;
-    overflow: hidden;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 10vh;
-    width: 100%;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-    img {
-        margin-left: 1em;
-        height: 4em;
-        width: 4em;
-        transition: transform 0.3s ease-in-out;
-        border-radius: 50%;
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 1rem;
+  
+  img {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+  }
 }
 
 .nav-links {
-    display: flex;
+  display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -48,7 +45,7 @@
 
     ul li a {
         text-decoration: none;
-        color: black;
+        color: $text-color;
         font-size: 1em;
         margin: 0 .5em;
         transition: 0.3s ease-in-out;
@@ -59,16 +56,8 @@
     }
 }
 
-// Hamburger Menu
-.nav-btn {
-    display: none;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-// Contact Button
 .nav-contact {
-    font-size: 1em;
+  font-size: 1em;
     height: auto;
     width: 5em;
     border: 1px solid black;
@@ -91,302 +80,407 @@
     }
 }
 
-.li-contact {
-    display: none;
+// Hamburger Menu Styles
+.nav-btn {
+  display: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 1000;
+  
+  i {
+    font-size: 1.75rem;
+    color: $text-color;
+    transition: $transition;
+  }
 }
+
+.li-contact {
+  display: none;
+}
+
+// Head Title
 .head-title {
-    text-align: center;
-    margin-top: 10vh; 
-    padding: 1.5em 0;
+  text-align: center;
+  padding: 1.5em 0;
 
-    h1 {
-        font-size: 3.5em;
-        color: $text-color;
-        font-weight: bold;
+  h1 {
+      font-size: 3.5em;
+      color: $text-color;
+      font-weight: bold;
 
-        span {
-            color: $primary-color;
-        }
-    }
+      span {
+          color: $primary-color;
+      }
+  }
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 
 
-    .hero-content {
-        height: 100%;
-        width: 100%;
-        padding: 2em;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-       
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-        }
+  .hero-content {
+      height: 100%;
+      width: 100%;
+      padding: 2em;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+     
+      &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.6);
+      }
 
-       
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1; // Keeps it behind content
-        }
-    }
+     
+      img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1; // Keeps it behind content
+      }
+  }
 
-    .hero-text {
-        text-align: center;
-        position: relative;
-        color: white;
+  .hero-text {
+      text-align: center;
+      position: relative;
+      color: white;
 
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
-        }
+      h1 {
+          font-size: 3em;
+          margin-bottom: 0.5em;
+          text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+      }
 
-        p {
-            font-size: 1.5em;
-            text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.2);
-        }
+      p {
+          font-size: 1.5em;
+          text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.2);
+      }
 
-        a {
-            text-decoration: none;
-            border:1px solid $primary-color;
-            color: white;
-            padding: 0.7em 1.5em;
-            font-size: 1.2em;
-            border-radius: $border-radius-large;
-            display: inline-block;
-            margin-top: 1em;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      a {
+          text-decoration: none;
+          border:1px solid $primary-color;
+          color: white;
+          padding: 0.7em 1.5em;
+          font-size: 1.2em;
+          border-radius: $border-radius-large;
+          display: inline-block;
+          margin-top: 1em;
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 
-            &:hover {
-                background: $primary-color;
-                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-            }
-        }
-    }
+          &:hover {
+              background: $primary-color;
+              box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+          }
+      }
+  }
 }
 
 
 .recipes-container {
-    max-width: 1200px;
-    margin: 4em auto;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  max-width: 1200px;
+  margin: 4em auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-    // Tags Section
-    .tags-container {
-        margin-bottom: 2em;
-        h2 {
-            font-size: 2em;
-            color: $primary-color;
-            margin-bottom: 1em;
-            span{
-                color: $text-color;
-            }
-        }
+  // Tags Section
+  .tags-container {
+      margin-bottom: 2em;
+      h2 {
+          font-size: 2em;
+          color: $primary-color;
+          margin-bottom: 1em;
+          span{
+              color: $text-color;
+          }
+      }
 
-        .tags {
-            display: flex;
-            justify-content: center;
-            gap: 1em;
-            flex-wrap: wrap;
+      .tags {
+          display: flex;
+          justify-content: center;
+          gap: 1em;
+          flex-wrap: wrap;
 
-            a {
-                color: black;
-                padding: 0.5em 1em;
-                border: 1px solid $primary-color;
-                border-radius: 5px;
-                text-decoration: none;
-                transition: 0.3s ease-in-out;
+          a {
+              color: black;
+              padding: 0.5em 1em;
+              border: 1px solid $primary-color;
+              border-radius: 5px;
+              text-decoration: none;
+              transition: 0.3s ease-in-out;
 
-                &:hover {
-                    background: darken($primary-color, 10%);
-                }
-            }
-        }
-    }
+              &:hover {
+                  background: darken($primary-color, 10%);
+              }
+          }
+      }
+  }
 
-    // Recipes List using Flexbox
-    .recipes-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2em;
-        width: 100%;
-    
-        .recipe {
-            background: white;
-            padding: 1.5em;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-            text-align: center;
-            max-width: 300px;
-            flex: 1 1 280px;
-    
-            &:hover {
-                transform: scale(1.05);
-            }
-    
-            img {
-                width: 100%;
-                height: 180px;
-                object-fit: cover;
-                border-radius: 10px;
-            }
-    
-            h3 {
-                font-size: 1.5em;
-                margin-top: 1em;
-            }
-    
-            p {
-                font-size: 1em;
-                color: #555;
-                margin-bottom: 1em;
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 2; // Limits text to 2 lines
-                -webkit-box-orient: vertical;
-                text-overflow: ellipsis;
-            }
-    
-            .btn {
-                border: 1px solid $primary-color;
-                color: $text-color;
-                padding: 0.7em 1.2em;
-                border-radius: 5px;
-                text-decoration: none;
-                transition: 0.3s ease-in-out;
-    
-                &:hover {
-                    background: darken($primary-color, 10%);
-                }
-            }
-        }
-    }
-    
+  // Recipes List using Flexbox
+  .recipes-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+      width: 100%;
+  
+      .recipe {
+          background: white;
+          padding: 1.5em;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease-in-out;
+          text-align: center;
+          max-width: 300px;
+          flex: 1 1 280px;
+  
+          &:hover {
+              transform: scale(1.05);
+          }
+  
+          img {
+              width: 100%;
+              height: 180px;
+              object-fit: cover;
+              border-radius: 10px;
+          }
+  
+          h3 {
+              font-size: 1.5em;
+              margin-top: 1em;
+          }
+  
+          p {
+              font-size: 1em;
+              color: #555;
+              margin-bottom: 1em;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp: 2; // Limits text to 2 lines
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+          }
+  
+          .btn {
+              border: 1px solid $primary-color;
+              color: $text-color;
+              padding: 0.7em 1.2em;
+              border-radius: 5px;
+              text-decoration: none;
+              transition: 0.3s ease-in-out;
+  
+              &:hover {
+                  background: darken($primary-color, 10%);
+              }
+          }
+      }
+  }
+  
 }
 
 
 // Footer Styling
 footer {
-    background-color: $footer-color;
-    color: $footer-text-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    width: 100%;
-    position: relative;
-    margin-top: 1em;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
+  background-color: $footer-color;
+  color: $footer-text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  position: relative;
+  margin-top: 1em;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
 
-    p {
-        margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: .8em;
+  p {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: .8em;
 
-        a {
-            text-decoration: none;
-            color: $primary-color;
-            transition: 0.3s ease-in-out;
+      a {
+          text-decoration: none;
+          color: $primary-color;
+          transition: 0.3s ease-in-out;
 
-            &:hover {
-                color: $footer-text-color;
-            }
-        }
+          &:hover {
+              color: $footer-text-color;
+          }
+      }
 
-        .footer-logo {
-           color: $primary-color;
-        }
-    }
+      .footer-logo {
+         color: $primary-color;
+      }
+  }
 }
 
 
-// Mobile Responsiveness
 @media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 10vh;
-        left: 0;
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;  
+    width: 80%;   
+    height: 100vh;
+    background: $primary-color;
+    box-shadow: $shadow-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s ease-in-out;
+    z-index: 999;
+    
+    &.active {
+      right: 0;  
+    }
+    
+    ul {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 0 2rem;
+      
+      li {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
         width: 100%;
-        background-color: $background-color;
-        text-align: center;
-        padding: 1em 0;
-        transition: 0.3s ease-in-out;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        a {
+          font-size: 1.25rem;
+          font-weight: 600;
+          padding: 0.5rem 0;
+          display: block;
+          border-bottom: 1px solid $secondary-color;
+          width: 100%;
+          
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
     }
+  }
+  
 
-    .nav-links ul {
-        flex-direction: column;
-    }
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  body.menu-open::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-btn {
+    color: $text-color;
+    display: block;
+    z-index: 1000;
 
-    .nav-links ul li {
-        padding: 1em 0;
+    &:hover {
+      color: $secondary-color;
     }
+   
+  }
+  
+  .nav-contact {
+    display: none;
+  }
+  
+  .li-contact {
+    display: block;
+  }
+  
+  .hero-text {
+    margin-top: 2em;
+}
 
-    .nav-btn {
-        display: block;
-    }
+.hero-content {
+    height: 50vh;
+    padding: 1.5em;
+}
+.recipes-container {
+    padding: 1em;
+}
 
-    .li-contact {
-        display: block;
-    }
+.recipes-list {
+    flex-direction: column;
+    align-items: center;
+}
+}
 
-    .nav-links.active {
-        display: flex;
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  .recipes-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero .hero-content .hero-text p {
+    font-size: 1.25rem;
+  }
+  
+  .head-title {
+    padding: 1.5rem 0;
+  }
+  
+  .tags-container .tags {
+    flex-direction: column;
+    align-items: center;
+    
+    a {
+      width: 80%;
+      text-align: center;
     }
-
-    .nav-header {
-        justify-content: space-between;
-    }
-
-    .hero-text {
-        margin-top: 2em;
-    }
-
-    .hero-content {
-        height: 50vh;
-        padding: 1.5em;
-    }
-    .recipes-container {
-        padding: 1em;
-    }
-
-    .recipes-list {
-        flex-direction: column;
-        align-items: center;
-    }
+  }
 }

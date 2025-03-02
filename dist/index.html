@@ -75,49 +75,64 @@
 
         <div class="recipes-list">
           <div class="recipe">
-              <img src="./assets/Cake.png" alt="Chocolate Cake" />
-              <h3>Chocolate Cake</h3>
-              <p>This rich and moist chocolate cake is topped with a smooth and creamy chocolate ganache, making it a perfect dessert for any occasion.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
+            <img src="./assets/Cake.png" alt="Chocolate Cake" />
+            <h3>Chocolate Cake</h3>
+            <p>
+              This rich and moist chocolate cake is topped with a smooth and
+              creamy chocolate ganache, making it a perfect dessert for any
+              occasion.
+            </p>
+            <a href="./recipes.html" class="btn">View Recipe</a>
           </div>
           <div class="recipe">
-              <img src="./assets/pasta.png" alt="Creamy Alfredo Pasta" />
-              <h3>Creamy Alfredo Pasta</h3>
-              <p>A delicious fettuccine pasta dish tossed in a rich and creamy Alfredo sauce with parmesan cheese and garlic.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
+            <img src="./assets/pasta.png" alt="Creamy Alfredo Pasta" />
+            <h3>Creamy Alfredo Pasta</h3>
+            <p>
+              A delicious fettuccine pasta dish tossed in a rich and creamy
+              Alfredo sauce with parmesan cheese and garlic.
+            </p>
+            <a href="./recipes.html" class="btn">View Recipe</a>
           </div>
           <div class="recipe">
-              <img src="./assets/naan.png" alt="Garlic Butter Naan" />
-              <h3>Garlic Butter Naan</h3>
-              <p>Soft, fluffy naan bread brushed with a mixture of garlic butter and fresh herbs, perfect for pairing with Indian curries.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
+            <img src="./assets/naan.png" alt="Garlic Butter Naan" />
+            <h3>Garlic Butter Naan</h3>
+            <p>
+              Soft, fluffy naan bread brushed with a mixture of garlic butter
+              and fresh herbs, perfect for pairing with Indian curries.
+            </p>
+            <a href="./recipes.html" class="btn">View Recipe</a>
           </div>
-      </div>
-      
-      
-      <br><br>
-      
-      <div class="recipes-list">
+        </div>
+
+        <br /><br />
+
+        <div class="recipes-list">
           <div class="recipe">
-              <img src="./assets/butter_chicken.png" alt="Butter Chicken" />
-              <h3>Butter Chicken</h3>
-              <p>A classic Indian dish featuring tender chicken in a creamy tomato sauce.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
+            <img src="./assets/butter_chicken.png" alt="Butter Chicken" />
+            <h3>Butter Chicken</h3>
+            <p>
+              A classic Indian dish featuring tender chicken in a creamy tomato
+              sauce.
+            </p>
+            <a href="./recipes.html" class="btn">View Recipe</a>
           </div>
           <div class="recipe">
-              <img src="./assets/Burger.png" alt="Cheese Burger" />
-              <h3>Cheese Burger</h3>
-              <p>Juicy beef patty layered with melted cheese, lettuce, and tomato.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
+            <img src="./assets/Burger.png" alt="Cheese Burger" />
+            <h3>Cheese Burger</h3>
+            <p>
+              Juicy beef patty layered with melted cheese, lettuce, and tomato.
+            </p>
+            <a href="./recipes.html" class="btn">View Recipe</a>
           </div>
           <div class="recipe">
-              <img src="./assets/grill.png" alt="Grilled Chicken" />
-              <h3>Grilled Chicken</h3>
-              <p>Perfectly seasoned grilled chicken breast with a smoky flavor.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
+            <img src="./assets/grill.png" alt="Grilled Chicken" />
+            <h3>Grilled Chicken</h3>
+            <p>
+              Perfectly seasoned grilled chicken breast with a smoky flavor.
+            </p>
+            <a href="./recipes.html" class="btn">View Recipe</a>
           </div>
-      </div>
-      
+        </div>
       </section>
     </main>
     <!-- footer  -->
@@ -129,10 +144,21 @@
     </footer>
 
     <!-- end of footer -->
+    <script>
+      const navBtn = document.querySelector(".nav-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      navBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+      // Add this to your existing JavaScript
+  document.querySelector(".nav-btn").addEventListener("click", function() {
+  document.body.classList.toggle("menu-open");
+});
+    </script>
+    <script
+      src="https://kit.fontawesome.com/3bb1e689e2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script src="./script/script.js"></script>
-  <script
-    src="https://kit.fontawesome.com/3bb1e689e2.js"
-    crossorigin="anonymous"
-  ></script>
 </html>

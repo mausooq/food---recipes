@@ -6,30 +6,26 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-.nav-header {
-  background: #fa995c;
-  overflow: hidden;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
+header {
+  position: sticky;
   top: 0;
-  left: 0;
-  height: 10vh;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #FF914D;
+  z-index: 999;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 .nav-header img {
-  margin-left: 1em;
-  height: 4em;
-  width: 4em;
-  transition: transform 0.3s ease-in-out;
   border-radius: 50%;
-}
-.nav-header img:hover {
-  transform: scale(1.1);
+  width: 4em;
+  height: 4em;
 }
 
 .nav-links {
@@ -48,19 +44,13 @@
 }
 .nav-links ul li a {
   text-decoration: none;
-  color: black;
+  color: #2c3e50;
   font-size: 1em;
   margin: 0 0.5em;
   transition: 0.3s ease-in-out;
 }
 .nav-links ul li a:hover {
   color: #efddb1;
-}
-
-.nav-btn {
-  display: none;
-  font-size: 1.5em;
-  cursor: pointer;
 }
 
 .nav-contact {
@@ -84,13 +74,27 @@
   color: white;
 }
 
+.nav-btn {
+  display: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 1000;
+}
+.nav-btn i {
+  font-size: 1.75rem;
+  color: #2c3e50;
+  transition: all 0.3s linear;
+}
+
 .li-contact {
   display: none;
 }
 
 .head-title {
   text-align: center;
-  margin-top: 10vh;
   padding: 1.5em 0;
 }
 .head-title h1 {
@@ -297,34 +301,77 @@ footer p .footer-logo {
 
 @media screen and (max-width: 768px) {
   .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 10vh;
-    left: 0;
-    width: 100%;
-    background-color: #ecf0f1;
-    text-align: center;
-    padding: 1em 0;
-    transition: 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: #FF914D;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s ease-in-out;
+    z-index: 999;
+  }
+  .nav-links.active {
+    right: 0;
   }
   .nav-links ul {
     flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 2rem;
   }
   .nav-links ul li {
-    padding: 1em 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  .nav-links ul li:last-child {
+    margin-bottom: 0;
+  }
+  .nav-links ul li a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    display: block;
+    border-bottom: 1px solid #efddb1;
+    width: 100%;
+  }
+  .nav-links ul li a:hover {
+    color: #efddb1;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  body.menu-open::before {
+    opacity: 1;
+    visibility: visible;
   }
   .nav-btn {
+    color: #2c3e50;
     display: block;
+    z-index: 1000;
+  }
+  .nav-btn:hover {
+    color: #efddb1;
+  }
+  .nav-contact {
+    display: none;
   }
   .li-contact {
     display: block;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .nav-header {
-    justify-content: space-between;
   }
   .hero-text {
     margin-top: 2em;
@@ -339,5 +386,33 @@ footer p .footer-logo {
   .recipes-list {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  .recipes-list {
+    grid-template-columns: 1fr;
+  }
+  .hero .hero-content .hero-text p {
+    font-size: 1.25rem;
+  }
+  .head-title {
+    padding: 1.5rem 0;
+  }
+  .tags-container .tags {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tags-container .tags a {
+    width: 80%;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
