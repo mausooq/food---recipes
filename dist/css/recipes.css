@@ -54,7 +54,7 @@
   transition: all 0.3s linear;
 }
 .recipes-page-container .search-filter .search-box button:hover {
-  background: #e74c3c;
+  background: #eb6a5b;
 }
 .recipes-page-container .search-filter .filter-options {
   display: flex;
@@ -141,7 +141,7 @@
   text-decoration: none;
 }
 .recipes-page-container .recipes-grid .recipe-card .recipe-info .btn:hover {
-  background: #e74c3c;
+  background: #eb6a5b;
 }
 .recipes-page-container .pagination {
   display: flex;
@@ -158,7 +158,7 @@
   transition: all 0.3s linear;
 }
 .recipes-page-container .pagination a:hover {
-  background: #e74c3c;
+  background: #eb6a5b;
   color: white;
 }
 .recipes-page-container .pagination a.active {

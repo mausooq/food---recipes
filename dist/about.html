@@ -6,6 +6,7 @@
     <title>About Us</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/about.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -49,7 +50,7 @@
       <section class="about-container">
         <div class="about-content">
           <div class="about-image">
-            <img src="./assets/image.png" alt="About Us" />
+            <img src="./assets/team.png" alt="About Us" />
           </div>
           <div class="about-text">
             <h2>Our <span>Story</span></h2>
@@ -77,8 +78,8 @@
           <h2>Meet Our <span>Team</span></h2>
           <div class="team-members">
             <div class="team-member">
-              <img src="./assets/image.png" alt="Team Member" />
-              <h3>Jane Doe</h3>
+              <img src="./assets/Ali.png" alt="Team Member" />
+              <h3>Halim Ali Khan</h3>
               <p>Executive Chef</p>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -87,8 +88,8 @@
               </div>
             </div>
             <div class="team-member">
-              <img src="./assets/image.png" alt="Team Member" />
-              <h3>John Smith</h3>
+              <img src="./assets/monica.png" alt="Team Member" />
+              <h3>monica geller</h3>
               <p>Pastry Chef</p>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -97,9 +98,9 @@
               </div>
             </div>
             <div class="team-member">
-              <img src="./assets/image.png" alt="Team Member" />
-              <h3>Alex Johnson</h3>
-              <p>Food Photographer</p>
+              <img src="./assets/alex.png" alt="Team Member" />
+              <h3>Alex</h3>
+              <p>General manager</p>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -120,6 +121,18 @@
     </footer>
 
     <!-- end of footer -->
+    <script>
+      const navBtn = document.querySelector(".nav-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      navBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+      // Add this to your existing JavaScript
+  document.querySelector(".nav-btn").addEventListener("click", function() {
+  document.body.classList.toggle("menu-open");
+});
+    </script>
      
   </body>
   <script src="./script/script.js"></script>

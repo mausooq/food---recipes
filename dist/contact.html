@@ -6,6 +6,7 @@
     <title>Contact Us</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contact.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -56,7 +57,7 @@
               <i class="fas fa-map-marker-alt"></i>
               <div>
                 <h3>Address</h3>
-                <p>123 Cooking Street, Foodville, FC 12345</p>
+                <p>1st floor, Ajanta Business Centre, Bejai - Kapikad Rd, Katlerigudda Bejai, Kapikad, Mangaluru, Karnataka 575003</p>
               </div>
             </div>
             
@@ -64,7 +65,7 @@
               <i class="fas fa-phone"></i>
               <div>
                 <h3>Phone</h3>
-                <p>+1 (555) 123-4567</p>
+                <p>+91 9901845606</p>
               </div>
             </div>
             
@@ -89,7 +90,7 @@
           </div>
           
           <div class="map">
-            <img src="./assets/image.png" alt="Map" />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982587.5018555163!2d69.96336851249998!3d12.89192240000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35b2c43c5594d%3A0xad33997edef04c61!2sPace%20Wisdom%20Solutions!5e0!3m2!1sen!2sin!4v1740966471539!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         
@@ -131,9 +132,19 @@
     </footer>
 
     <!-- end of footer -->
-     
+    <script>
+      const navBtn = document.querySelector(".nav-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      navBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+      // Add this to your existing JavaScript
+  document.querySelector(".nav-btn").addEventListener("click", function() {
+  document.body.classList.toggle("menu-open");
+});
+    </script>
   </body>
-  <script src="./script/script.js"></script>
   <script
     src="https://kit.fontawesome.com/3bb1e689e2.js"
     crossorigin="anonymous"

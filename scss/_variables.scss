@@ -1,19 +1,23 @@
 // Colors
 $primary-color: #FF914D;
 $secondary-color: #efddb1;
-$accent-color: #e74c3c;
+$accent-color: #eb6a5b;
 $footer-color: #34495e;
 $footer-text-color: #ecf0f1;
 $background-color: #ecf0f1;
+$light-bg: #f9f9f9;
 $text-color: #2c3e50;
 $shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 $shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 $shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 $max-width: 1120px;
 $spacing: 0.25rem;
-$transition: all 0.3s linear;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 3rem;
 $transition: all 0.3s linear;
 $radius: 0.25rem;
+$border-radius: 8px;
 
 // Fonts
 $font-family-base: 'Helvetica Neue', Arial, sans-serif;
