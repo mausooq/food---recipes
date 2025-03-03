@@ -454,14 +454,12 @@
         navLinks.classList.toggle("active");
       });
 
-      // Add this to your existing JavaScript
       document.querySelector(".nav-btn").addEventListener("click", function () {
         document.body.classList.toggle("menu-open");
       });
 
-      // Add this to close menu when clicking outside
+    
       document.addEventListener("click", function (event) {
-        // Check if menu is open and the click was outside the menu and not on the button
         if (
           navLinks.classList.contains("active") &&
           !navLinks.contains(event.target) &&
