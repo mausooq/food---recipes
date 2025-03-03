@@ -1,0 +1,104 @@
+@import 'variables';
+@import 'restes';
+
+// Main content styling
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.head-title {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: $spacing;
+    
+    span {
+      color: $primary-color;
+    }
+  }
+}
+
+.tags-page-container {
+  .tags-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .tags-grid {
+    display: grid;
+    gap: 2rem;
+    
+    // For mobile: 1 column
+    grid-template-columns: 1fr;
+    
+    // For tablets: 2 columns
+    @media screen and (min-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    // For desktops: 3 columns
+    @media screen and (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .tag-card {
+      background: white;
+      border-radius: $radius;
+      box-shadow: $shadow-1;
+      transition: $transition;
+      text-decoration: none;
+      color: $text-color;
+      overflow: hidden;
+      
+      &:hover {
+        box-shadow: $shadow-3;
+        transform: translateY(-5px);
+        
+        h2 {
+          color: $primary-color;
+        }
+      }
+      
+      .tag-image {
+        height: 200px;
+        overflow: hidden;
+        
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: $transition;
+        }
+      }
+      
+      &:hover .tag-image img {
+        transform: scale(1.05);
+      }
+      
+      h2 {
+        padding: 1rem 1rem 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        transition: $transition;
+        margin: 0;
+      }
+      
+      p {
+        color: #666;
+        padding: 0 1rem 1rem;
+        margin: 0;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+

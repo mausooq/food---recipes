@@ -6,6 +6,7 @@
     <title>Recipe Tags</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/tags.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -52,7 +53,7 @@
         <div class="tags-grid">
           <a href="./recipes.html" class="tag-card">
             <div class="tag-image">
-              <img src="./assets/image.png" alt="Breakfast" />
+              <img src="./assets/breakfast.png" alt="Breakfast" />
             </div>
             <h2>Breakfast</h2>
             <p>12 recipes</p>
@@ -60,7 +61,7 @@
           
           <a href="./recipes.html" class="tag-card">
             <div class="tag-image">
-              <img src="./assets/image.png" alt="Lunch" />
+              <img src="./assets/lunch.png" alt="Lunch" />
             </div>
             <h2>Lunch</h2>
             <p>15 recipes</p>
@@ -68,7 +69,7 @@
           
           <a href="./recipes.html" class="tag-card">
             <div class="tag-image">
-              <img src="./assets/image.png" alt="Dinner" />
+              <img src="./assets/Dinner.png" alt="Dinner" />
             </div>
             <h2>Dinner</h2>
             <p>20 recipes</p>
@@ -76,7 +77,7 @@
           
           <a href="./recipes.html" class="tag-card">
             <div class="tag-image">
-              <img src="./assets/image.png" alt="Dessert" />
+              <img src="./assets/dessert.png" alt="Dessert" />
             </div>
             <h2>Dessert</h2>
             <p>18 recipes</p>
@@ -84,7 +85,7 @@
           
           <a href="./recipes.html" class="tag-card">
             <div class="tag-image">
-              <img src="./assets/image.png" alt="Snack" />
+              <img src="./assets/snacks.png" alt="Snack" />
             </div>
             <h2>Snack</h2>
             <p>10 recipes</p>
@@ -92,7 +93,7 @@
           
           <a href="./recipes.html" class="tag-card">
             <div class="tag-image">
-              <img src="./assets/image.png" alt="Vegetarian" />
+              <img src="./assets/veg.png" alt="Vegetarian" />
             </div>
             <h2>Vegetarian</h2>
             <p>14 recipes</p>
@@ -100,7 +101,7 @@
           
           <a href="./recipes.html" class="tag-card">
             <div class="tag-image">
-              <img src="./assets/image.png" alt="Vegan" />
+              <img src="./assets/vegan.png" alt="Vegan" />
             </div>
             <h2>Vegan</h2>
             <p>8 recipes</p>
@@ -108,7 +109,7 @@
           
           <a href="./recipes.html" class="tag-card">
             <div class="tag-image">
-              <img src="./assets/image.png" alt="Gluten-Free" />
+              <img src="./assets/gFree.png" alt="Gluten-Free" />
             </div>
             <h2>Gluten-Free</h2>
             <p>6 recipes</p>
@@ -116,7 +117,7 @@
           
           <a href="./recipes.html" class="tag-card">
             <div class="tag-image">
-              <img src="./assets/image.png" alt="Quick Meals" />
+              <img src="./assets/quick_meal.png" alt="Quick Meals" />
             </div>
             <h2>Quick Meals</h2>
             <p>9 recipes</p>
@@ -136,7 +137,18 @@
     <!-- end of footer -->
      
   </body>
-  <script src="./script/script.js"></script>
+  <script>
+    const navBtn = document.querySelector(".nav-btn");
+    const navLinks = document.querySelector(".nav-links");
+
+    navBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+    // Add this to your existing JavaScript
+    document.querySelector(".nav-btn").addEventListener("click", function () {
+      document.body.classList.toggle("menu-open");
+    });
+  </script>
   <script
     src="https://kit.fontawesome.com/3bb1e689e2.js"
     crossorigin="anonymous"
