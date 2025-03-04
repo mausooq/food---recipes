@@ -271,17 +271,17 @@ header {
           }
   
           h3 {
-              font-size: 1.5em;
+              font-size: 1em;
               margin-top: 1em;
           }
   
           p {
-              font-size: 1em;
+              font-size: 0.9em;
               color: #555;
-              margin-bottom: 1em;
+              margin-bottom: auto;
               overflow: hidden;
               display: -webkit-box;
-              -webkit-line-clamp: 2; // Limits text to 2 lines
+              -webkit-line-clamp: 2; 
               -webkit-box-orient: vertical;
               text-overflow: ellipsis;
           }
@@ -613,22 +613,8 @@ footer {
   
   .testimonials-slider {
     display: flex;
-    transition: transform 0.5s ease;
-    
-    @keyframes slideTestimonials {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-    
-    animation: slideTestimonials 30s linear infinite;
-    
-    &:hover {
-      animation-play-state: paused;
-    }
+    transition: transform 0.3s ease;
+    padding: $spacing-sm 0;
   }
   
   .testimonial {
@@ -748,6 +734,9 @@ footer {
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: $transition;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
   
   &:hover {
     transform: translateY(-5px);
@@ -763,26 +752,40 @@ footer {
   h3 {
     padding: $spacing-sm $spacing-sm 0;
     color: $text-color;
+    font-size: 1.2rem;
+    margin: $spacing-sm 0;
   }
   
   p {
-    padding: $spacing-sm;
+    padding: 0 $spacing-sm;
     color: $text-color;
-    min-height: 80px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: $spacing-sm;
   }
   
   .btn {
-    display: block;
+    display: inline-block;
     margin: 0 $spacing-sm $spacing-sm;
     text-align: center;
-    color: white;
-    padding: 10px;
+    color: $text-color;
+    background: transparent;
+    padding: 0.7em 1.2em;
     text-decoration: none;
+    border: 1px solid $primary-color;
     border-radius: $border-radius;
     transition: $transition;
+    align-self: center;
     
     &:hover {
-      background-color: darken($primary-color, 10%);
+      background-color: $primary-color;
+      color: white;
     }
   }
 }
@@ -898,10 +901,6 @@ footer {
   .restaurant-ambiance .ambiance-overlay p {
     font-size: 1rem;
     
-  }
-  
-  .testimonials-slider {
-    padding-bottom: $spacing-sm;
   }
   
   .testimonial {

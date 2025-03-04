@@ -6,6 +6,7 @@
     <title>Error</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/404.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -13,43 +14,60 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="nav-header">
-      <a href="index.html">
-        <img src="./assets/logo.png" alt="logo" />
-      </a>
 
-      <div class="nav-btn">
-        <i class="fas fa-bars"></i>
+    <header>
+      <nav class="nav-header">
+        <a href="index.html">
+          <img src="./assets/logo.png" alt="logo" />
+        </a>
+
+        <div class="nav-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./tags.html">Tags</a></li>
+            <li><a href="./recipes.html">Recipes</a></li>
+            <li class="li-contact"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-contact nav-links">
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Error Section -->
+    <main class="error-page">
+      <div class="error-container">
+        <dotlottie-player src="https://lottie.host/adf71859-63fd-4a23-b42b-b8718aefca33/dcJF83jdzg.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+        <h1>404</h1>
+        <h2>Oops! Recipe Not Found</h2>
+        <p>Looks like this recipe got lost in the kitchen!</p>
+        <div class="error-btns">
+          <a href="index.html" class="btn">
+            <i class="fas fa-home"></i> Back to Home
+          </a>
+          <a href="recipes.html" class="btn">
+            <i class="fas fa-utensils"></i> View Recipes
+          </a>
+        </div>
       </div>
-
-      <div class="nav-links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./tags.html">Tags</a></li>
-          <li><a href="./recipes.html">Recipes</a></li>
-          <li class="li-contact"><a href="./contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="nav-contact nav-links">
-        <a href="./contact.html">Contact</a>
-      </div>
-    </nav>
-    <!-- end of navbar -->
-
-    <!-- Hero -->
-     <div class="hero">
-
-     </div>
-
-    <!-- end of hero -->
+    </main>
 
     <!-- footer  -->
     <footer>
-      <p>&copy; 2025 <span class="footer-logo">Saleford & Co.</span> | Designed by <a href="https://mausooq.vercel.app">Mausooq</a></p> 
+      <p>
+        &copy; 2025 <span class="footer-logo">Saleford & Co.</span> | Designed
+        by <a href="https://mausooq.vercel.app">Mausooq</a>
+      </p>
     </footer>
 
     <!-- end of footer -->

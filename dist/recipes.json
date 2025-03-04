@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Chocolate Cake",
+    "image": "./assets/Cake.png",
+    "category": "Dessert",
+    "time": "45 mins",
+    "servings": "8 servings",
+    "description": "This rich and moist chocolate cake is topped with a smooth and creamy chocolate ganache, making it a perfect dessert for any occasion.",
+    "link": "./recipe.html"
+  },
+  {
+    "title": "Creamy Alfredo Pasta",
+    "image": "./assets/pasta.png",
+    "category": "Dinner",
+    "time": "30 mins",
+    "servings": "4 servings",
+    "description": "A delicious fettuccine pasta dish tossed in a rich and creamy Alfredo sauce with parmesan cheese and garlic.",
+    "link": "./recipe.html"
+  },
+  {
+    "title": "Garlic Butter Naan",
+    "image": "./assets/naan.png",
+    "category": "Bread",
+    "time": "40 mins",
+    "servings": "6 servings",
+    "description": "Soft, fluffy naan bread brushed with a mixture of garlic butter and fresh herbs, perfect for pairing with Indian curries.",
+    "link": "./recipe.html"
+  },
+  {
+    "title": "Butter Chicken",
+    "image": "./assets/butter_chicken.png",
+    "category": "Dinner",
+    "time": "50 mins",
+    "servings": "4 servings",
+    "description": "A classic Indian dish featuring tender chicken in a creamy tomato sauce with aromatic spices.",
+    "link": "./recipe.html"
+  },
+  {
+    "title": "Cheese Burger",
+    "image": "./assets/Burger.png",
+    "category": "Lunch",
+    "time": "25 mins",
+    "servings": "2 servings",
+    "description": "Juicy beef patty layered with melted cheese, fresh lettuce, and tomato on a toasted bun.",
+    "link": "./recipe.html"
+  },
+  {
+    "title": "Grilled Chicken",
+    "image": "./assets/grill.png",
+    "category": "Dinner",
+    "time": "35 mins",
+    "servings": "4 servings",
+    "description": "Perfectly seasoned grilled chicken breast with a smoky flavor and juicy interior.",
+    "link": "./recipe.html"
+  }
+]

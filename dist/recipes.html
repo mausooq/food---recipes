@@ -63,18 +63,12 @@
               <option value="dessert">Dessert</option>
               <option value="snack">Snack</option>
             </select>
-            
-            <select>
-              <option value="">Sort By</option>
-              <option value="newest">Newest</option>
-              <option value="popular">Most Popular</option>
-              <option value="quick">Quick & Easy</option>
-            </select>
+          
           </div>
         </div>
         
         <div class="recipes-grid">
-          <div class="recipe-card">
+          <!-- <div class="recipe-card">
             <div class="recipe-image">
               <img src="./assets/Cake.png" alt="Chocolate Cake" />
               <div class="recipe-tags">
@@ -90,98 +84,10 @@
               <p>This rich and moist chocolate cake is topped with a smooth and creamy chocolate ganache, making it a perfect dessert for any occasion.</p>
               <a href="./recipe.html" class="btn">View Recipe</a>
             </div>
-          </div>
+          </div> -->
           
-          <div class="recipe-card">
-            <div class="recipe-image">
-              <img src="./assets/pasta.png" alt="Creamy Alfredo Pasta" />
-              <div class="recipe-tags">
-                <span>Dinner</span>
-              </div>
-            </div>
-            <div class="recipe-info">
-              <h2>Creamy Alfredo Pasta</h2>
-              <div class="recipe-meta">
-                <span><i class="far fa-clock"></i> 30 mins</span>
-                <span><i class="fas fa-utensils"></i> 4 servings</span>
-              </div>
-              <p>A delicious fettuccine pasta dish tossed in a rich and creamy Alfredo sauce with parmesan cheese and garlic.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
-            </div>
+         
           </div>
-          
-          <div class="recipe-card">
-            <div class="recipe-image">
-              <img src="./assets/naan.png" alt="Garlic Butter Naan" />
-              <div class="recipe-tags">
-                <span>Bread</span>
-              </div>
-            </div>
-            <div class="recipe-info">
-              <h2>Garlic Butter Naan</h2>
-              <div class="recipe-meta">
-                <span><i class="far fa-clock"></i> 40 mins</span>
-                <span><i class="fas fa-utensils"></i> 6 servings</span>
-              </div>
-              <p>Soft, fluffy naan bread brushed with a mixture of garlic butter and fresh herbs, perfect for pairing with Indian curries.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
-            </div>
-          </div>
-          
-          <div class="recipe-card">
-            <div class="recipe-image">
-              <img src="./assets/butter_chicken.png" alt="Butter Chicken" />
-              <div class="recipe-tags">
-                <span>Dinner</span>
-              </div>
-            </div>
-            <div class="recipe-info">
-              <h2>Butter Chicken</h2>
-              <div class="recipe-meta">
-                <span><i class="far fa-clock"></i> 50 mins</span>
-                <span><i class="fas fa-utensils"></i> 4 servings</span>
-              </div>
-              <p>A classic Indian dish featuring tender chicken in a creamy tomato sauce with aromatic spices.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
-            </div>
-          </div>
-          
-          <div class="recipe-card">
-            <div class="recipe-image">
-              <img src="./assets/Burger.png" alt="Cheese Burger" />
-              <div class="recipe-tags">
-                <span>Lunch</span>
-              </div>
-            </div>
-            <div class="recipe-info">
-              <h2>Cheese Burger</h2>
-              <div class="recipe-meta">
-                <span><i class="far fa-clock"></i> 25 mins</span>
-                <span><i class="fas fa-utensils"></i> 2 servings</span>
-              </div>
-              <p>Juicy beef patty layered with melted cheese, fresh lettuce, and tomato on a toasted bun.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
-            </div>
-          </div>
-          
-          <div class="recipe-card">
-            <div class="recipe-image">
-              <img src="./assets/grill.png" alt="Grilled Chicken" />
-              <div class="recipe-tags">
-                <span>Dinner</span>
-              </div>
-            </div>
-            <div class="recipe-info">
-              <h2>Grilled Chicken</h2>
-              <div class="recipe-meta">
-                <span><i class="far fa-clock"></i> 35 mins</span>
-                <span><i class="fas fa-utensils"></i> 4 servings</span>
-              </div>
-              <p>Perfectly seasoned grilled chicken breast with a smoky flavor and juicy interior.</p>
-              <a href="./recipe.html" class="btn">View Recipe</a>
-            </div>
-          </div>
-        </div>
         
         <div class="pagination">
           <a href="#" class="active">1</a>
@@ -201,22 +107,13 @@
     </footer>
 
     <!-- end of footer -->
-    <script>
-      const navBtn = document.querySelector(".nav-btn");
-      const navLinks = document.querySelector(".nav-links");
 
-      navBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-      // Add this to your existing JavaScript
-  document.querySelector(".nav-btn").addEventListener("click", function() {
-  document.body.classList.toggle("menu-open");
-});
-    </script>
+    <script
+      src="https://kit.fontawesome.com/3bb1e689e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/recipes.js"></script>
+    <script src="./script/script.js"></script>
   </body>
-  <script src="./script/script.js"></script>
-  <script
-    src="https://kit.fontawesome.com/3bb1e689e2.js"
-    crossorigin="anonymous"
-  ></script>
+  
 </html>

@@ -244,13 +244,13 @@ header {
   border-radius: 10px;
 }
 .recipes-container .recipes-list .recipe h3 {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-top: 1em;
 }
 .recipes-container .recipes-list .recipe p {
-  font-size: 1em;
+  font-size: 0.9em;
   color: #555;
-  margin-bottom: 1em;
+  margin-bottom: auto;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -528,19 +528,8 @@ footer p .footer-logo {
 }
 .testimonials .testimonials-slider {
   display: flex;
-  transition: transform 0.5s ease;
-  animation: slideTestimonials 30s linear infinite;
-}
-@keyframes slideTestimonials {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.testimonials .testimonials-slider:hover {
-  animation-play-state: paused;
+  transition: transform 0.3s ease;
+  padding: 1rem 0;
 }
 .testimonials .testimonial {
   min-width: 300px;
@@ -644,6 +633,9 @@ footer p .footer-logo {
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s linear;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
 }
 .recipe:hover {
   transform: translateY(-5px);
@@ -658,24 +650,38 @@ footer p .footer-logo {
 .recipe h3 {
   padding: 1rem 1rem 0;
   color: #2c3e50;
+  font-size: 1.2rem;
+  margin: 1rem 0;
 }
 .recipe p {
-  padding: 1rem;
+  padding: 0 1rem;
   color: #2c3e50;
-  min-height: 80px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1rem;
 }
 .recipe .btn {
-  display: block;
+  display: inline-block;
   margin: 0 1rem 1rem;
   text-align: center;
-  color: white;
-  padding: 10px;
+  color: #2c3e50;
+  background: transparent;
+  padding: 0.7em 1.2em;
   text-decoration: none;
+  border: 1px solid #FF914D;
   border-radius: 8px;
   transition: all 0.3s linear;
+  align-self: center;
 }
 .recipe .btn:hover {
-  background-color: #ff711a;
+  background-color: #FF914D;
+  color: white;
 }
 
 .get-connected {
@@ -765,9 +771,6 @@ footer p .footer-logo {
   }
   .restaurant-ambiance .ambiance-overlay p {
     font-size: 1rem;
-  }
-  .testimonials-slider {
-    padding-bottom: 1rem;
   }
   .testimonial {
     min-width: 280px;

@@ -1,0 +1,150 @@
+@import 'variables';
+
+.error-page {
+  min-height: calc(100vh - 15vh); // Accounting for header and footer
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $light-bg;
+  padding: $spacing-md;
+}
+
+.error-container {
+  max-width: 600px;
+  text-align: center;
+  background: white;
+  padding: $spacing-lg;
+  border-radius: $border-radius;
+  box-shadow: $shadow-2;
+  animation: fadeIn 0.5s ease-in;
+
+  dotlottie-player {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto $spacing-md;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  h1 {
+    font-size: 6rem;
+    color: $primary-color;
+    margin-bottom: $spacing-sm;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    color: $text-color;
+    font-size: 2rem;
+    margin-bottom: $spacing-sm;
+  }
+
+  p {
+    color: lighten($text-color, 20%);
+    font-size: 1.1rem;
+    margin-bottom: $spacing-lg;
+  }
+
+  .error-btns {
+    display: flex;
+    gap: $spacing-md;
+    justify-content: center;
+
+    .btn {
+      padding: $spacing-sm $spacing-md;
+      border: 2px solid $primary-color;
+      border-radius: $border-radius;
+      color: $text-color;
+      text-decoration: none;
+      transition: $transition;
+      display: flex;
+      align-items: center;
+      gap: $spacing-sm;
+
+      i {
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        background-color: $primary-color;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: $shadow-1;
+      }
+    }
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// Responsive styles
+@media screen and (max-width: 768px) {
+  .error-container {
+    padding: $spacing-md;
+
+    dotlottie-player {
+      width: 250px !important;
+      height: 250px !important;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .error-btns {
+      flex-direction: column;
+      gap: $spacing-sm;
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .error-container {
+    dotlottie-player {
+      width: 200px !important;
+      height: 200px !important;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}
