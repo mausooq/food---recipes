@@ -1,12 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const recipeData = JSON.parse(localStorage.getItem('currentRecipe'));
-    
-    if (!recipeData) {
+
+    const urlParams = new URLSearchParams(window.location.search)
+
+    const recipeId = urlParams.get('id');
+
+    if (!recipeId) {
         window.location.href = 'recipes.html';
         return;
     }
 
-    displayRecipeDetails(recipeData);
+    
+    fetch("recipes.json")
+        .then(response => response.json())
+        .then(data => {
+            const recipe = data.find(recipe => recipe.id === parseInt(recipeId));
+            if (recipe) {
+                 displayRecipeDetails(recipe);
+            } 
+            
+        }).catch(err => {console.error('Error:', err)})
+
+    
 });
 
 function displayRecipeDetails(recipe) {

@@ -1,5 +1,6 @@
 [
   {
+    "id": 100,
     "title": "Chocolate Cake",
     "image": "./assets/Cake.png",
     "category": "Dessert",
@@ -31,6 +32,7 @@
     "link": "./recipe.html"
   },
   {
+    "id": 101,
     "title": "Creamy Alfredo Pasta",
     "image": "./assets/pasta.png",
     "category": "Dinner",
@@ -59,6 +61,7 @@
     "link": "./recipe.html"
   },
   {
+    "id": 102,
     "title": "Garlic Butter Naan",
     "image": "./assets/naan.png",
     "category": "Bread",
@@ -88,6 +91,7 @@
     "link": "./recipe.html"
   },
   {
+    "id": 103,
     "title": "Butter Chicken",
     "image": "./assets/butter_chicken.png",
     "category": "Dinner",
@@ -119,7 +123,8 @@
     ],
     "link": "./recipe.html"
   },
-    {
+  {
+    "id": 104,
     "title": "Mango Smoothie",
     "image": "./assets/mango_smoothie.png",
     "category": "Beverage",
@@ -127,22 +132,23 @@
     "servings": "2 servings",
     "description": "A refreshing mango smoothie with a blend of yogurt and honey.",
     "ingredients": [
-    "2 ripe mangoes, peeled and chopped",
-    "1 cup yogurt",
-    "1/2 cup milk",
-    "2 tbsp honey",
-    "1/2 tsp vanilla extract",
-    "Ice cubes (optional)"
+      "2 ripe mangoes, peeled and chopped",
+      "1 cup yogurt",
+      "1/2 cup milk",
+      "2 tbsp honey",
+      "1/2 tsp vanilla extract",
+      "Ice cubes (optional)"
     ],
     "instructions": [
-    "Add mangoes, yogurt, milk, honey, and vanilla extract to a blender.",
-    "Blend until smooth and creamy.",
-    "Add ice cubes if desired and blend again.",
-    "Pour into glasses and serve immediately."
+      "Add mangoes, yogurt, milk, honey, and vanilla extract to a blender.",
+      "Blend until smooth and creamy.",
+      "Add ice cubes if desired and blend again.",
+      "Pour into glasses and serve immediately."
     ],
     "link": "./recipe.html"
-    },
-    {
+  },
+  {
+    "id": 105,
     "title": "Vegetable Stir Fry",
     "image": "./assets/veggie_stir_fry.png",
     "category": "Lunch",
@@ -150,26 +156,27 @@
     "servings": "4 servings",
     "description": "A quick and healthy vegetable stir fry with a savory soy sauce glaze.",
     "ingredients": [
-    "1 cup broccoli florets",
-    "1 carrot, sliced",
-    "1 bell pepper, sliced",
-    "1/2 cup snap peas",
-    "1/2 cup mushrooms, sliced",
-    "2 cloves garlic, minced",
-    "2 tbsp soy sauce",
-    "1 tbsp sesame oil",
-    "1 tsp ginger, grated"
+      "1 cup broccoli florets",
+      "1 carrot, sliced",
+      "1 bell pepper, sliced",
+      "1/2 cup snap peas",
+      "1/2 cup mushrooms, sliced",
+      "2 cloves garlic, minced",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1 tsp ginger, grated"
     ],
     "instructions": [
-    "Heat sesame oil in a pan over medium heat.",
-    "Add garlic and ginger, and sauté for 1 minute.",
-    "Add all vegetables and stir-fry for 5-7 minutes until tender-crisp.",
-    "Pour soy sauce over vegetables and stir to coat evenly.",
-    "Remove from heat and serve immediately."
+      "Heat sesame oil in a pan over medium heat.",
+      "Add garlic and ginger, and sauté for 1 minute.",
+      "Add all vegetables and stir-fry for 5-7 minutes until tender-crisp.",
+      "Pour soy sauce over vegetables and stir to coat evenly.",
+      "Remove from heat and serve immediately."
     ],
     "link": "./recipe.html"
-    },
-    {
+  },
+  {
+    "id": 106,
     "title": "Pancakes",
     "image": "./assets/pancakes.png",
     "category": "Breakfast",
@@ -177,27 +184,28 @@
     "servings": "4 servings",
     "description": "Fluffy homemade pancakes served with syrup and fresh fruits.",
     "ingredients": [
-    "1 cup all-purpose flour",
-    "2 tbsp sugar",
-    "1 tsp baking powder",
-    "1/2 tsp baking soda",
-    "1/4 tsp salt",
-    "1 cup buttermilk",
-    "1 egg",
-    "2 tbsp melted butter",
-    "1 tsp vanilla extract"
+      "1 cup all-purpose flour",
+      "2 tbsp sugar",
+      "1 tsp baking powder",
+      "1/2 tsp baking soda",
+      "1/4 tsp salt",
+      "1 cup buttermilk",
+      "1 egg",
+      "2 tbsp melted butter",
+      "1 tsp vanilla extract"
     ],
     "instructions": [
-    "In a bowl, mix flour, sugar, baking powder, baking soda, and salt.",
-    "In another bowl, whisk buttermilk, egg, melted butter, and vanilla.",
-    "Combine wet and dry ingredients, stirring until just mixed.",
-    "Heat a non-stick pan and pour batter to form pancakes.",
-    "Cook until bubbles appear, then flip and cook for another minute.",
-    "Serve with syrup and fresh fruits."
+      "In a bowl, mix flour, sugar, baking powder, baking soda, and salt.",
+      "In another bowl, whisk buttermilk, egg, melted butter, and vanilla.",
+      "Combine wet and dry ingredients, stirring until just mixed.",
+      "Heat a non-stick pan and pour batter to form pancakes.",
+      "Cook until bubbles appear, then flip and cook for another minute.",
+      "Serve with syrup and fresh fruits."
     ],
     "link": "./recipe.html"
-    },
-    {
+  },
+  {
+    "id": 107,
     "title": "Tomato Soup",
     "image": "./assets/tomato_soup.png",
     "category": "Dinner",
@@ -205,60 +213,61 @@
     "servings": "4 servings",
     "description": "A warm and comforting homemade tomato soup with basil.",
     "ingredients": [
-    "4 large tomatoes, chopped",
-    "1 onion, chopped",
-    "2 cloves garlic, minced",
-    "2 cups vegetable broth",
-    "1/2 cup heavy cream",
-    "1 tsp basil",
-    "1/2 tsp salt",
-    "1/4 tsp black pepper",
-    "1 tbsp olive oil"
+      "4 large tomatoes, chopped",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "2 cups vegetable broth",
+      "1/2 cup heavy cream",
+      "1 tsp basil",
+      "1/2 tsp salt",
+      "1/4 tsp black pepper",
+      "1 tbsp olive oil"
     ],
     "instructions": [
-    "Heat olive oil in a pan and sauté onions and garlic until soft.",
-    "Add tomatoes, salt, and pepper, and cook for 10 minutes.",
-    "Pour in vegetable broth and simmer for another 10 minutes.",
-    "Blend the soup until smooth, then return to the pot.",
-    "Stir in heavy cream and basil, and heat for 2 more minutes.",
-    "Serve hot with croutons or grilled cheese."
+      "Heat olive oil in a pan and sauté onions and garlic until soft.",
+      "Add tomatoes, salt, and pepper, and cook for 10 minutes.",
+      "Pour in vegetable broth and simmer for another 10 minutes.",
+      "Blend the soup until smooth, then return to the pot.",
+      "Stir in heavy cream and basil, and heat for 2 more minutes.",
+      "Serve hot with croutons or grilled cheese."
     ],
     "link": "./recipe.html"
-    } ,   
-    {
-      "title": "Spicy Tacos",
-      "image": "./assets/tacos.png",
-      "category": "Lunch",
-      "time": "25 mins",
-      "servings": "4 servings",
-      "description": "Delicious and spicy beef tacos with fresh toppings and a zesty sauce.",
-      "ingredients": [
-        "1 lb ground beef",
-        "1 small onion, chopped",
-        "2 cloves garlic, minced",
-        "1 tsp chili powder",
-        "1/2 tsp cumin",
-        "1/2 tsp paprika",
-        "1/2 tsp salt",
-        "1/4 tsp black pepper",
-        "1/4 cup tomato sauce",
-        "8 small taco shells",
-        "1/2 cup shredded lettuce",
-        "1/2 cup diced tomatoes",
-        "1/4 cup shredded cheddar cheese",
-        "1/4 cup sour cream",
-        "Hot sauce (optional)"
-      ],
-      "instructions": [
-        "Heat a pan over medium heat and cook the ground beef until browned.",
-        "Add chopped onion and garlic, cooking for another 2 minutes.",
-        "Stir in chili powder, cumin, paprika, salt, and pepper.",
-        "Add tomato sauce and simmer for 5 minutes until thickened.",
-        "Warm taco shells in a dry skillet for 30 seconds per side.",
-        "Fill each taco shell with the beef mixture.",
-        "Top with shredded lettuce, tomatoes, cheese, and sour cream.",
-        "Drizzle with hot sauce if desired and serve immediately."
-      ],
-      "link": "./recipe.html"
+  },
+  {
+    "id": 108,
+    "title": "Spicy Tacos",
+    "image": "./assets/tacos.png",
+    "category": "Lunch",
+    "time": "25 mins",
+    "servings": "4 servings",
+    "description": "Delicious and spicy beef tacos with fresh toppings and a zesty sauce.",
+    "ingredients": [
+      "1 lb ground beef",
+      "1 small onion, chopped",
+      "2 cloves garlic, minced",
+      "1 tsp chili powder",
+      "1/2 tsp cumin",
+      "1/2 tsp paprika",
+      "1/2 tsp salt",
+      "1/4 tsp black pepper",
+      "1/4 cup tomato sauce",
+      "8 small taco shells",
+      "1/2 cup shredded lettuce",
+      "1/2 cup diced tomatoes",
+      "1/4 cup shredded cheddar cheese",
+      "1/4 cup sour cream",
+      "Hot sauce (optional)"
+    ],
+    "instructions": [
+      "Heat a pan over medium heat and cook the ground beef until browned.",
+      "Add chopped onion and garlic, cooking for another 2 minutes.",
+      "Stir in chili powder, cumin, paprika, salt, and pepper.",
+      "Add tomato sauce and simmer for 5 minutes until thickened.",
+      "Warm taco shells in a dry skillet for 30 seconds per side.",
+      "Fill each taco shell with the beef mixture.",
+      "Top with shredded lettuce, tomatoes, cheese, and sour cream.",
+      "Drizzle with hot sauce if desired and serve immediately."
+    ],
+    "link": "./recipe.html"
   }
 ]

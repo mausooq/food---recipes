@@ -65,6 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let filteredRecipes = recipesData;
 
+
+
         if (selectedCategory !== "all" && selectedCategory !== "") {
             filteredRecipes = filteredRecipes.filter(recipe =>
                 recipe.category.toLowerCase() === selectedCategory
@@ -78,13 +80,15 @@ document.addEventListener("DOMContentLoaded", function () {
             );
         }
 
+        // console.log(filteredRecipes);
+        // console.log(recipesData);
+        
+
         displayRecipes(filteredRecipes);
     }
 
     
-    window.saveRecipeData = function(id, recipeData) {
-        localStorage.setItem('currentRecipe', JSON.stringify(recipeData));
-    };
+  
 
 
     categorySelect.addEventListener("change", filterRecipes);

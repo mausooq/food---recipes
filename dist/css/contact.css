@@ -201,25 +201,49 @@
 .contact-form form .form-group textarea {
   resize: vertical;
 }
-.contact-form form .btn {
-  grid-column: 1/-1;
-  background-color: #FF914D;
-  color: white;
+.contact-form form .button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 768px) {
+  .contact-form form .button-group {
+    flex-direction: column;
+  }
+}
+.contact-form form .button-group .btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
   border: none;
-  padding: 12px 20px;
+  border-radius: 4px;
   font-size: 1rem;
-  font-weight: 500;
-  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.contact-form form .btn:hover {
-  background-color: #ff711a;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+.contact-form form .button-group .btn i {
+  font-size: 1.2rem;
 }
-.contact-form form .btn:active {
-  transform: translateY(0);
+.contact-form form .button-group .btn.email-btn {
+  background-color: #FF914D;
+  color: white;
+}
+.contact-form form .button-group .btn.email-btn:hover {
+  background-color: #ff711a;
+}
+.contact-form form .button-group .btn.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+}
+.contact-form form .button-group .btn.whatsapp-btn:hover {
+  background-color: #1da851;
+}
+.contact-form form .button-group .btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .newsletter {
