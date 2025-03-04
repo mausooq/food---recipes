@@ -6,6 +6,28 @@
     "time": "45 mins",
     "servings": "8 servings",
     "description": "This rich and moist chocolate cake is topped with a smooth and creamy chocolate ganache, making it a perfect dessert for any occasion.",
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "1 3/4 cups sugar",
+      "3/4 cup cocoa powder",
+      "2 tsp baking soda",
+      "1 tsp baking powder",
+      "1/2 tsp salt",
+      "2 eggs",
+      "1 cup milk",
+      "1/2 cup vegetable oil",
+      "2 tsp vanilla extract",
+      "1 cup boiling water"
+    ],
+    "instructions": [
+      "Preheat oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.",
+      "In a large bowl, mix flour, sugar, cocoa powder, baking soda, baking powder, and salt.",
+      "Add eggs, milk, oil, and vanilla. Mix until combined.",
+      "Stir in boiling water (batter will be thin). Pour batter into pans.",
+      "Bake for 30-35 minutes or until a toothpick inserted comes out clean.",
+      "Cool for 10 minutes, then remove from pans and cool completely.",
+      "Frost with chocolate ganache and serve."
+    ],
     "link": "./recipe.html"
   },
   {
@@ -15,6 +37,25 @@
     "time": "30 mins",
     "servings": "4 servings",
     "description": "A delicious fettuccine pasta dish tossed in a rich and creamy Alfredo sauce with parmesan cheese and garlic.",
+    "ingredients": [
+      "12 oz fettuccine pasta",
+      "2 tbsp butter",
+      "3 cloves garlic, minced",
+      "1 cup heavy cream",
+      "1 cup grated Parmesan cheese",
+      "1/2 tsp salt",
+      "1/4 tsp black pepper",
+      "1/4 tsp nutmeg",
+      "1/2 cup chopped parsley"
+    ],
+    "instructions": [
+      "Cook pasta according to package instructions, then drain and set aside.",
+      "In a large skillet, melt butter over medium heat and sauté garlic for 1 minute.",
+      "Add heavy cream, salt, pepper, and nutmeg. Bring to a simmer.",
+      "Stir in Parmesan cheese until melted and smooth.",
+      "Add cooked pasta and toss to coat evenly.",
+      "Garnish with parsley and serve immediately."
+    ],
     "link": "./recipe.html"
   },
   {
@@ -24,6 +65,26 @@
     "time": "40 mins",
     "servings": "6 servings",
     "description": "Soft, fluffy naan bread brushed with a mixture of garlic butter and fresh herbs, perfect for pairing with Indian curries.",
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "1 tsp sugar",
+      "1/2 tsp salt",
+      "1/2 tsp baking soda",
+      "1/4 cup yogurt",
+      "1/2 cup warm water",
+      "2 tbsp melted butter",
+      "2 cloves garlic, minced",
+      "1 tbsp chopped cilantro"
+    ],
+    "instructions": [
+      "In a bowl, mix flour, sugar, salt, and baking soda.",
+      "Add yogurt and warm water, then knead into a soft dough.",
+      "Cover and let rest for 30 minutes.",
+      "Divide dough into balls and roll out into oval shapes.",
+      "Heat a skillet and cook each naan for 1-2 minutes per side until bubbly and golden.",
+      "Brush with melted butter, garlic, and cilantro.",
+      "Serve warm with curries or dips."
+    ],
     "link": "./recipe.html"
   },
   {
@@ -33,24 +94,171 @@
     "time": "50 mins",
     "servings": "4 servings",
     "description": "A classic Indian dish featuring tender chicken in a creamy tomato sauce with aromatic spices.",
+    "ingredients": [
+      "1 lb boneless chicken, cut into cubes",
+      "2 tbsp butter",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "1 tsp garam masala",
+      "1 tsp cumin",
+      "1 tsp paprika",
+      "1/2 tsp turmeric",
+      "1 cup tomato puree",
+      "1/2 cup heavy cream",
+      "Salt and pepper to taste",
+      "Fresh cilantro for garnish"
+    ],
+    "instructions": [
+      "Heat butter in a pan and sauté onions, garlic, and ginger until soft.",
+      "Add chicken and cook until browned.",
+      "Stir in garam masala, cumin, paprika, and turmeric.",
+      "Pour in tomato puree and simmer for 10 minutes.",
+      "Add heavy cream and stir until smooth.",
+      "Cook for another 5 minutes, then garnish with cilantro and serve."
+    ],
     "link": "./recipe.html"
   },
-  {
-    "title": "Cheese Burger",
-    "image": "./assets/Burger.png",
-    "category": "Lunch",
-    "time": "25 mins",
+    {
+    "title": "Mango Smoothie",
+    "image": "./assets/mango_smoothie.png",
+    "category": "Beverage",
+    "time": "5 mins",
     "servings": "2 servings",
-    "description": "Juicy beef patty layered with melted cheese, fresh lettuce, and tomato on a toasted bun.",
+    "description": "A refreshing mango smoothie with a blend of yogurt and honey.",
+    "ingredients": [
+    "2 ripe mangoes, peeled and chopped",
+    "1 cup yogurt",
+    "1/2 cup milk",
+    "2 tbsp honey",
+    "1/2 tsp vanilla extract",
+    "Ice cubes (optional)"
+    ],
+    "instructions": [
+    "Add mangoes, yogurt, milk, honey, and vanilla extract to a blender.",
+    "Blend until smooth and creamy.",
+    "Add ice cubes if desired and blend again.",
+    "Pour into glasses and serve immediately."
+    ],
     "link": "./recipe.html"
-  },
-  {
-    "title": "Grilled Chicken",
-    "image": "./assets/grill.png",
-    "category": "Dinner",
-    "time": "35 mins",
+    },
+    {
+    "title": "Vegetable Stir Fry",
+    "image": "./assets/veggie_stir_fry.png",
+    "category": "Lunch",
+    "time": "20 mins",
     "servings": "4 servings",
-    "description": "Perfectly seasoned grilled chicken breast with a smoky flavor and juicy interior.",
+    "description": "A quick and healthy vegetable stir fry with a savory soy sauce glaze.",
+    "ingredients": [
+    "1 cup broccoli florets",
+    "1 carrot, sliced",
+    "1 bell pepper, sliced",
+    "1/2 cup snap peas",
+    "1/2 cup mushrooms, sliced",
+    "2 cloves garlic, minced",
+    "2 tbsp soy sauce",
+    "1 tbsp sesame oil",
+    "1 tsp ginger, grated"
+    ],
+    "instructions": [
+    "Heat sesame oil in a pan over medium heat.",
+    "Add garlic and ginger, and sauté for 1 minute.",
+    "Add all vegetables and stir-fry for 5-7 minutes until tender-crisp.",
+    "Pour soy sauce over vegetables and stir to coat evenly.",
+    "Remove from heat and serve immediately."
+    ],
     "link": "./recipe.html"
+    },
+    {
+    "title": "Pancakes",
+    "image": "./assets/pancakes.png",
+    "category": "Breakfast",
+    "time": "15 mins",
+    "servings": "4 servings",
+    "description": "Fluffy homemade pancakes served with syrup and fresh fruits.",
+    "ingredients": [
+    "1 cup all-purpose flour",
+    "2 tbsp sugar",
+    "1 tsp baking powder",
+    "1/2 tsp baking soda",
+    "1/4 tsp salt",
+    "1 cup buttermilk",
+    "1 egg",
+    "2 tbsp melted butter",
+    "1 tsp vanilla extract"
+    ],
+    "instructions": [
+    "In a bowl, mix flour, sugar, baking powder, baking soda, and salt.",
+    "In another bowl, whisk buttermilk, egg, melted butter, and vanilla.",
+    "Combine wet and dry ingredients, stirring until just mixed.",
+    "Heat a non-stick pan and pour batter to form pancakes.",
+    "Cook until bubbles appear, then flip and cook for another minute.",
+    "Serve with syrup and fresh fruits."
+    ],
+    "link": "./recipe.html"
+    },
+    {
+    "title": "Tomato Soup",
+    "image": "./assets/tomato_soup.png",
+    "category": "Dinner",
+    "time": "30 mins",
+    "servings": "4 servings",
+    "description": "A warm and comforting homemade tomato soup with basil.",
+    "ingredients": [
+    "4 large tomatoes, chopped",
+    "1 onion, chopped",
+    "2 cloves garlic, minced",
+    "2 cups vegetable broth",
+    "1/2 cup heavy cream",
+    "1 tsp basil",
+    "1/2 tsp salt",
+    "1/4 tsp black pepper",
+    "1 tbsp olive oil"
+    ],
+    "instructions": [
+    "Heat olive oil in a pan and sauté onions and garlic until soft.",
+    "Add tomatoes, salt, and pepper, and cook for 10 minutes.",
+    "Pour in vegetable broth and simmer for another 10 minutes.",
+    "Blend the soup until smooth, then return to the pot.",
+    "Stir in heavy cream and basil, and heat for 2 more minutes.",
+    "Serve hot with croutons or grilled cheese."
+    ],
+    "link": "./recipe.html"
+    } ,   
+    {
+      "title": "Spicy Tacos",
+      "image": "./assets/tacos.png",
+      "category": "Lunch",
+      "time": "25 mins",
+      "servings": "4 servings",
+      "description": "Delicious and spicy beef tacos with fresh toppings and a zesty sauce.",
+      "ingredients": [
+        "1 lb ground beef",
+        "1 small onion, chopped",
+        "2 cloves garlic, minced",
+        "1 tsp chili powder",
+        "1/2 tsp cumin",
+        "1/2 tsp paprika",
+        "1/2 tsp salt",
+        "1/4 tsp black pepper",
+        "1/4 cup tomato sauce",
+        "8 small taco shells",
+        "1/2 cup shredded lettuce",
+        "1/2 cup diced tomatoes",
+        "1/4 cup shredded cheddar cheese",
+        "1/4 cup sour cream",
+        "Hot sauce (optional)"
+      ],
+      "instructions": [
+        "Heat a pan over medium heat and cook the ground beef until browned.",
+        "Add chopped onion and garlic, cooking for another 2 minutes.",
+        "Stir in chili powder, cumin, paprika, salt, and pepper.",
+        "Add tomato sauce and simmer for 5 minutes until thickened.",
+        "Warm taco shells in a dry skillet for 30 seconds per side.",
+        "Fill each taco shell with the beef mixture.",
+        "Top with shredded lettuce, tomatoes, cheese, and sour cream.",
+        "Drizzle with hot sauce if desired and serve immediately."
+      ],
+      "link": "./recipe.html"
   }
 ]
