@@ -736,7 +736,7 @@ footer {
   transition: $transition;
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 100%;
   
   &:hover {
     transform: translateY(-5px);
@@ -750,10 +750,10 @@ footer {
   }
   
   h3 {
-    padding: $spacing-sm $spacing-sm 0;
+    padding: $spacing-sm;
     color: $text-color;
     font-size: 1.2rem;
-    margin: $spacing-sm 0;
+    margin: 0;
   }
   
   p {
@@ -761,18 +761,20 @@ footer {
     color: $text-color;
     font-size: 0.9rem;
     line-height: 1.5;
-    flex-grow: 1;
+    flex: 1;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: $spacing-sm;
+    margin: $spacing-sm 0;
   }
   
   .btn {
-    display: inline-block;
-    margin: 0 $spacing-sm $spacing-sm;
+    width: auto;
+    min-width: 120px;
+    display: block;
+    margin: $spacing-sm auto;
     text-align: center;
     color: $text-color;
     background: transparent;
@@ -781,7 +783,6 @@ footer {
     border: 1px solid $primary-color;
     border-radius: $border-radius;
     transition: $transition;
-    align-self: center;
     
     &:hover {
       background-color: $primary-color;
@@ -867,6 +868,28 @@ footer {
   .get-connected {
     bottom: 20px;
     right: 20px;
+  }
+  
+  .recipe {
+    height: auto;
+    min-height: 380px;
+    
+    img {
+      height: 180px;
+    }
+    
+    h3 {
+      font-size: 1.1rem;
+      margin: $spacing-sm 0;
+    }
+    
+    
+    
+    .btn {
+      margin-top: 1em;
+      width: calc(100% - 2 * #{$spacing-sm});
+      max-width: 200px;
+    }
   }
 }
 

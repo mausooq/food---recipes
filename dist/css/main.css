@@ -635,7 +635,7 @@ footer p .footer-logo {
   transition: all 0.3s linear;
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 100%;
 }
 .recipe:hover {
   transform: translateY(-5px);
@@ -648,27 +648,29 @@ footer p .footer-logo {
      object-fit: cover;
 }
 .recipe h3 {
-  padding: 1rem 1rem 0;
+  padding: 1rem;
   color: #2c3e50;
   font-size: 1.2rem;
-  margin: 1rem 0;
+  margin: 0;
 }
 .recipe p {
   padding: 0 1rem;
   color: #2c3e50;
   font-size: 0.9rem;
   line-height: 1.5;
-  flex-grow: 1;
+  flex: 1;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 .recipe .btn {
-  display: inline-block;
-  margin: 0 1rem 1rem;
+  width: auto;
+  min-width: 120px;
+  display: block;
+  margin: 1rem auto;
   text-align: center;
   color: #2c3e50;
   background: transparent;
@@ -677,7 +679,6 @@ footer p .footer-logo {
   border: 1px solid #FF914D;
   border-radius: 8px;
   transition: all 0.3s linear;
-  align-self: center;
 }
 .recipe .btn:hover {
   background-color: #FF914D;
@@ -746,6 +747,22 @@ footer p .footer-logo {
   .get-connected {
     bottom: 20px;
     right: 20px;
+  }
+  .recipe {
+    height: auto;
+    min-height: 380px;
+  }
+  .recipe img {
+    height: 180px;
+  }
+  .recipe h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  .recipe .btn {
+    margin-top: 1em;
+    width: calc(100% - 2 * 1rem);
+    max-width: 200px;
   }
 }
 @media (max-width: 576px) {
